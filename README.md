@@ -6,9 +6,9 @@ of the [Privacy Community Group](https://privacycg.github.io/).
 
 ## Editors:
 
-- [Sam Goto](https://github.com/samuelgoto), Google Inc.
-- [John Wilander](https://github.com/johnwilander), Apple Inc.
-- [Ben Vandersloot](https://github.com/bvandersloot), Mozilla
+- (suggestion) [Sam Goto](https://github.com/samuelgoto), Google Inc.
+- (suggestion) [John Wilander](https://github.com/johnwilander), Apple Inc.
+- (suggestion) [Ben Vandersloot](https://github.com/bvandersloot), Mozilla
 
 ## Participate
 - https://github.com/privacycg/login-status-api/issues
@@ -57,30 +57,30 @@ There are two mechanisms that a website can use to set the login status: a JS AP
 To set the login status, a website can call the following JS APIs:
 
 ```javascript
-partial interface Navigator {
-  Login login;
-};
-```
-
-```javascript
-partial interface Login {
-  Promise<void> setStatus(
-  "logged-in" || "logged-out");
-};
-```
-
-For example:
-
-```javascript
 navigator.login.setStatus("logged-in");
 navigator.login.setStatus("logged-out");
 ```
 
-> a few alternatives considered:
-> 1) needs to be async and doesn't throw 
-> navigator.login.status = "logged-in";
-> 2) 
-> navigator.loginStatus.setLoggedIn();
+That's enabled by the following web platform changes:
+
+```javascript
+partial interface Navigator {
+  Login login;
+};
+
+enum LoginStatus {
+  "logged-in",
+  "logged-out",
+};
+
+partial interface Login {
+  Promise<void> setStatus(LoginStatus status);
+};
+```
+
+> A few alternatives considered:
+> - navigator.login.status = "logged-in"; // needs to be async and doesn't throw 
+> - navigator.loginStatus.setLoggedIn(); // a bit verbosed
 
 ##### HTTP API
 
