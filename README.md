@@ -98,13 +98,13 @@ The login status is available to Web Platform APIs and Browser features outside 
 Every user of the login status (e.g. Web Standards or browser features integrating with it) **MUST** incorporate into their threat model that it is:
 
 1. Self-declared: any website can and will lie to gain any advantage
-2. Client-side: the state represent the website's client-side knowledge of the user's login status, which is just an approximation of the server-side's state (which is the ultimate source of truth) 
+2. Client-side: the state represents the website's client-side knowledge of the user's login status, which is just an approximation of the server-side's state (which is the ultimate source of truth) 
 
 Therefore, the login status of a cross-origin domain must not be observable by a page itself. 
 
 One potential for abuse is if websites don’t call the logout API when they should. This could allow them to maintain the privileges tied to login status even after the user logged out.
 
-Features using the baseline Login Status need to assume that (1) an (2) are the case and design their security and privacy models under these conditions.
+Features using the baseline Login Status need to assume that (1) and (2) are the case and design their security and privacy models under these conditions.
 
 ###### FedCM
 
