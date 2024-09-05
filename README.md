@@ -11,7 +11,7 @@ of the [Privacy Community Group](https://privacycg.github.io/).
 - (suggestion) [Ben Vandersloot](https://github.com/bvandersloot), Mozilla
 
 ## Participate
-- https://github.com/privacycg/login-status-api/issues
+- https://github.com/w3c-fedid/login-status/issues
 
 ## Table of Contents
 
