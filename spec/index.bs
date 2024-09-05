@@ -21,7 +21,7 @@ Text Macro: IDP Identity Provider
 
 Abstract: A Web Platform API that allows websites to notify the browser when their users login and logout.
 
-Test Suite: https://github.com/web-platform-tests/wpt/tree/master/fedcm
+Test Suite: https://github.com/web-platform-tests/wpt/tree/master/fedcm/fedcm-login-status
 </pre>
 
 <pre class=link-defaults>
