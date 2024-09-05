@@ -4,8 +4,8 @@ Shortname: login-status
 Level: 1
 Status: w3c/FPWD
 Group: fedid
-TR: http://www.w3.org/TR/fedcm/login-status.html
-ED: https://w3c-fedid.github.io/fedcm/login-status.html
+TR: https://www.w3.org/TR/fedcm/#browser-api-login-status
+ED: https://w3c-fedid.github.io/login-status
 Prepare for TR: true
 Repository: w3c-fedid/FedCM
 Editor: Christian Biesinger, w3cid 39461, Google Inc. https://google.com, cbiesinger@chromium.org
