@@ -7,7 +7,7 @@ Group: fedid
 TR: https://www.w3.org/TR/fedcm/#browser-api-login-status
 ED: https://w3c-fedid.github.io/login-status
 Prepare for TR: true
-Repository: w3c-fedid/FedCM
+Repository: w3c-fedid/login-status
 Editor: Christian Biesinger, w3cid 39461, Google Inc. https://google.com, cbiesinger@chromium.org
 Editor: John Wilander, Apple Inc. https://apple.com, wilander@apple.com
 
