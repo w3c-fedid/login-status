@@ -1,3 +1,4 @@
+
 # Explainer: Login Status API
 
 A [Work Item](https://privacycg.github.io/charter.html#work-items)
